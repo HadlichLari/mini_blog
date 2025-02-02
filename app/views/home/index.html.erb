@@ -1,0 +1,13 @@
+<h1>Welcome Guys</h1>
+<h1> Be Welcome</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% @posts.each do |post| %>
+    <% if post.description? %>
+     <h1> <%= post.title %> </h1> 
+      <% end %>
+    <% end %>
+
+    <% link_to "Posts", posts_path %>
+   
+
