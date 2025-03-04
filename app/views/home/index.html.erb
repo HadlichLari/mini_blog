@@ -1,14 +1,22 @@
-<h1>Welcome Guys</h1>
-<h2> Be Welcome</h2>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1 style="font-size: 30px;">WELCOME</h1>
 
 <% @posts.each do |post| %>
     <% if post.description? %>
-     <h1> <%= post.title %> </h1> 
+     <h1> <%= link_to post.title, post_path(post) %> </h1> 
       <% end %>
-    <% end %>
+    <% end %> 
+
+    
 
     <% link_to "Posts", posts_path %>
-    <a href="http://localhost:3000/posts"> Posts <a\>
+    <a p style="font-size: 15px;" href="http://localhost:3000/posts"> All Posts <a\>
+
+    <a> .... </a>
+
+    <a p style="font-size: 15px;" href="http://localhost:3000/products"> All Products <a\>
+  
    
 
+
+
+      

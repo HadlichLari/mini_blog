@@ -10,3 +10,19 @@
   </p>
 
 </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :title %> | Meu Site</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application", defer: true %>
+</head>
+<body>
+  <%= "shared/navbar" %>
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>
